@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Niconne");
+
+* {
+    font-family: "Niconne", cursive;
+}
+
+.fullScreenSlider .slide-1 {
+    background-image: url(img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.fullScreenSlider .slide-2 {
+    background-image: url(img/2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.fullScreenSlider .slide-3 {
+    background-image: url(img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+}
+.fullScreenSlider .slide-4 {
+    background-image: url(img/4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.fullScreenSlider .slide-5 {
+    background-image: url(img/5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+h1 {
+    font-size: 280%;
+}
+
+.link {
+    margin-top: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.overlay-violet .link:hover {
+    color: rgba(22, 12, 40);
+}
+.overlay-green .link:hover {
+    color: rgba(22, 219, 147);
+}
+.overlay-pink .link:hover {
+    color: rgba(202, 21, 81);
+}
+.overlay-blue .link:hover {
+    color: rgba(2, 1, 34);
+}
+.overlay-red .link:hover {
+    color: rgba(224, 2, 20);
+}
+
+.link:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    opacity: 1;
+    
+}
+.overlay:hover::after {
+    opacity: 0;
+}
+
+.overlay-violet::after {
+    background-color: rgba(22, 12, 40, 0.8);
+    transition:  opacity 0.5s;
+}
+.overlay-green::after {
+    background-color: rgba(22, 219, 147, 0.8);
+    transition:  opacity 0.5s;
+}
+.overlay-pink::after {
+    background-color: rgba(202, 21, 81, 0.8);
+    transition:  opacity 0.5s;
+}
+.overlay-blue::after {
+    background-color: rgba(2, 1, 34, 0.8);
+    transition:  opacity 0.5s;
+}
+.overlay-red::after {
+    background-color: rgba(224, 2, 20, 0.8);
+    transition:  opacity 0.5s;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.owl-dot {
+        background: #212121 !important;
+        margin: 0 2px !important;
+        border: 2px solid transparent  !important;
+        border-radius: 50px !important;
+        width: 10px !important;
+        height: 10px !important;
+        outline: 0 !important;
+        z-index: 5 !important;
+}
+.owl-dot:active {
+        border-color: #ffffff !important;
+}
