@@ -64,6 +64,7 @@ h3 {
     background-color: #fff;
     border-radius: 5px;
     width: 90%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
     border: 1px solid #e67e22;
     margin-left: 5% !important;
@@ -105,6 +106,8 @@ h3 {
 
 .plan-box ul {
     list-style: none;
+    -webkit-padding-start: 10px !important;
+    -moz-padding-start: 10px !important;
     padding-inline-start: 10px !important;
 }
 
